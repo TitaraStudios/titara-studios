@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B2A3A" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#00D2FF" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#00D2FF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" />
+  <circle cx="480" cy="270" r="240" fill="url(#glow)" />
+  <text x="480" y="90" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle">EVOLUTION!</text>
+  <!-- merging cubes -->
+  <rect x="330" y="220" width="120" height="120" rx="22" fill="#6C5CE7" transform="rotate(-8 390 280)" />
+  <rect x="510" y="220" width="120" height="120" rx="22" fill="#6C5CE7" transform="rotate(8 570 280)" />
+  <g transform="translate(420 360)">
+    <rect x="0" y="0" width="120" height="120" rx="24" fill="#00D2FF" />
+    <circle cx="40" cy="48" r="12" fill="#fff" /><circle cx="80" cy="48" r="12" fill="#fff" />
+    <circle cx="40" cy="48" r="6" fill="#0F172A" /><circle cx="80" cy="48" r="6" fill="#0F172A" />
+    <path d="M38 82 Q60 100 84 82" stroke="#0F172A" stroke-width="6" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A1640" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" />
+  <text x="480" y="80" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700" fill="#FFD93D" text-anchor="middle">MONSTER COLLECTION</text>
+  <!-- collection grid -->
+  <g transform="translate(140 130)">
+    <rect x="0" y="0" width="130" height="130" rx="20" fill="#6C5CE7" />
+    <rect x="170" y="0" width="130" height="130" rx="20" fill="#00D2FF" />
+    <rect x="340" y="0" width="130" height="130" rx="20" fill="#FFD93D" />
+    <rect x="510" y="0" width="130" height="130" rx="20" fill="#fff" opacity="0.12" />
+    <rect x="0" y="170" width="130" height="130" rx="20" fill="#00D2FF" />
+    <rect x="170" y="170" width="130" height="130" rx="20" fill="#FFD93D" />
+    <rect x="340" y="170" width="130" height="130" rx="20" fill="#fff" opacity="0.12" />
+    <rect x="510" y="170" width="130" height="130" rx="20" fill="#fff" opacity="0.12" />
+    <circle cx="45" cy="55" r="10" fill="#0F172A" /><circle cx="85" cy="55" r="10" fill="#0F172A" />
+    <circle cx="215" cy="55" r="10" fill="#0F172A" /><circle cx="255" cy="55" r="10" fill="#0F172A" />
+    <text x="575" y="80" font-size="48" fill="#fff" text-anchor="middle" opacity="0.4">?</text>
+    <text x="405" y="250" font-size="48" fill="#0F172A" text-anchor="middle" opacity="0.4">?</text>
+  </g>
+</svg>

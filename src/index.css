@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Honour reduced-motion preference globally */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  body {
+    @apply bg-ink text-slate-100 font-sans antialiased;
+    @apply transition-colors duration-300;
+  }
+
+  /* Light theme surface overrides */
+  html:not(.dark) body {
+    @apply bg-slate-50 text-slate-900;
+  }
+
+  /* Focus visibility for accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-secondary ring-offset-2 ring-offset-ink;
+  }
+  html:not(.dark) :focus-visible {
+    @apply ring-offset-white;
+  }
+
+  ::selection {
+    @apply bg-primary/40 text-white;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Gradient text helper */
+  .text-gradient {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+
+  /* Glass surface used by navbar + cards */
+  .glass {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+  html:not(.dark) .glass {
+    @apply border-slate-900/10 bg-white/70;
+  }
+
+  /* Animated gradient border button */
+  .btn-glow {
+    @apply relative isolate overflow-hidden;
+  }
+  .btn-glow::before {
+    content: '';
+    @apply absolute inset-0 -z-10 bg-brand-gradient opacity-100;
+    background-size: 200% 200%;
+    animation: gradient-pan 6s ease infinite;
+  }
+}
+
+@layer utilities {
+  /* Thin custom scrollbar */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.primary.600') transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-primary/60;
+  }
+
+  .perspective {
+    perspective: 1000px;
+  }
+}
