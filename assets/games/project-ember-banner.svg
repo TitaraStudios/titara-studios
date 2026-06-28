@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2A1640" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+    <radialGradient id="ember" cx="50%" cy="55%" r="50%">
+      <stop offset="0" stop-color="#FFD93D" />
+      <stop offset="1" stop-color="#FF7A45" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" />
+  <circle cx="400" cy="250" r="170" fill="url(#ember)" />
+  <path d="M400 150 q40 70 0 130 q-40 -60 0 -130 Z" fill="#FFD93D" opacity="0.9" />
+  <text x="400" y="430" font-family="Space Grotesk, sans-serif" font-size="40"
+        font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="3">PROJECT EMBER</text>
+</svg>

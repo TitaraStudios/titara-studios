@@ -1,0 +1,11 @@
+import{j as e,m as t}from"./motion-BL_sh8I7.js";import{a as i,P as n,S as o,p as a,C as l,L as r,B as c}from"./index-C_PyEa80.js";import{d as m}from"./react-ROn2mNWm.js";/**
+ * @license lucide-react v0.417.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const d=i("ArrowLeft",[["path",{d:"m12 19-7-7 7-7",key:"1l729n"}],["path",{d:"M19 12H5",key:"x3x0zl"}]]);/**
+ * @license lucide-react v0.417.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const x=i("House",[["path",{d:"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",key:"5wwlr5"}],["path",{d:"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",key:"1d0kgt"}]]);function f(){const s=m();return e.jsxs(n,{children:[e.jsx(o,{title:"Page not found",path:"/404"}),e.jsxs("section",{className:"relative grid min-h-[70vh] place-items-center overflow-hidden",children:[e.jsx(a,{className:"-left-20 top-10 bg-primary",size:420}),e.jsx(a,{className:"bottom-0 right-0 bg-secondary",size:360}),e.jsxs(l,{className:"relative text-center",children:[e.jsx(t.p,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},transition:{duration:.6},className:"font-display text-8xl font-bold leading-none text-gradient sm:text-9xl",children:"404"}),e.jsx(t.h1,{initial:{opacity:0,y:16},animate:{opacity:1,y:0},transition:{delay:.1},className:"mt-4 font-display text-2xl font-bold text-white sm:text-3xl",children:"This level doesn't exist"}),e.jsx(t.p,{initial:{opacity:0,y:16},animate:{opacity:1,y:0},transition:{delay:.15},className:"mx-auto mt-3 max-w-md text-slate-400",children:"The page you're looking for may have been moved, renamed or never existed."}),e.jsxs(t.div,{initial:{opacity:0,y:16},animate:{opacity:1,y:0},transition:{delay:.2},className:"mt-8 flex flex-wrap items-center justify-center gap-4",children:[e.jsxs(r,{to:"/",size:"lg",children:[e.jsx(x,{className:"h-5 w-5"}),"Back to home"]}),e.jsxs(c,{variant:"outline",size:"lg",onClick:()=>s(-1),children:[e.jsx(d,{className:"h-5 w-5"}),"Go back"]})]})]})]})]})}export{f as default};
