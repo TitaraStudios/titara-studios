@@ -54,21 +54,19 @@ export default function NewsCard({ post, featured = false }: NewsCardProps) {
             featured ? 'text-2xl' : 'text-lg'
           }`}
         >
-          {post.title}
+          <Link to={`/news/${post.id}`} className="after:absolute after:inset-0">
+            {post.title}
+          </Link>
         </h3>
 
         <p className="flex-1 text-sm leading-relaxed text-slate-400">{post.excerpt}</p>
 
         <div className="flex items-center justify-between pt-2">
           <span className="text-xs font-medium text-slate-500">By {post.author}</span>
-          <Link
-            to={`/news`}
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-secondary transition-colors hover:text-secondary-400"
-            aria-label={`Read more: ${post.title}`}
-          >
+          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-secondary">
             Read more
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Link>
+          </span>
         </div>
       </div>
     </Card>

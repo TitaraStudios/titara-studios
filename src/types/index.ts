@@ -52,6 +52,11 @@ export interface NewsCategory {
   label: string
 }
 
+export interface NewsHighlight {
+  label: string
+  icon: LucideIcon
+}
+
 export interface NewsPost {
   id: string
   title: string
@@ -61,6 +66,12 @@ export interface NewsPost {
   readingTime: number // minutes
   cover: string
   author: string
+  /** Full article body, one string per paragraph. Used on the detail page. */
+  content?: string[]
+  /** Optional pillar row (e.g. Play / Create / Explore / Inspire). */
+  highlights?: NewsHighlight[]
+  /** Optional closing line rendered in an emphasised style. */
+  closing?: string
 }
 
 export interface StatItem {

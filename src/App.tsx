@@ -11,6 +11,7 @@ const GameDetail = lazy(() => import('./pages/GameDetail'))
 const About = lazy(() => import('./pages/About'))
 const Careers = lazy(() => import('./pages/Careers'))
 const News = lazy(() => import('./pages/News'))
+const NewsDetail = lazy(() => import('./pages/NewsDetail'))
 const Contact = lazy(() => import('./pages/Contact'))
 const Legal = lazy(() => import('./pages/Legal'))
 const NotFound = lazy(() => import('./pages/NotFound'))
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="about" element={<About />} />
         <Route path="careers" element={<Careers />} />
         <Route path="news" element={<News />} />
+        <Route path="news/:id" element={<NewsDetail />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy" element={<Legal variant="privacy" />} />
         <Route path="terms" element={<Legal variant="terms" />} />
