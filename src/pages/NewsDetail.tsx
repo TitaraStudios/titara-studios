@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Clock, Calendar, Rocket } from 'lucide-react'
+import { ArrowLeft, Clock, Calendar, Rocket, CheckCircle2 } from 'lucide-react'
 import PageTransition from '@/components/layout/PageTransition'
 import Seo from '@/components/seo/Seo'
 import Container from '@/components/ui/Container'
@@ -84,7 +84,6 @@ export default function NewsDetail() {
                 variants={fadeUp}
                 className="font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl"
               >
-                <span className="mr-2">🚀</span>
                 {post.title}
               </motion.h1>
 
@@ -109,6 +108,25 @@ export default function NewsDetail() {
                 </Reveal>
               ))}
             </div>
+
+            {/* Feature list */}
+            {post.featureList && post.featureList.length > 0 && (
+              <Reveal>
+                <div className="mt-10 rounded-3xl border border-white/10 bg-card/60 p-6 sm:p-8">
+                  <h2 className="font-display text-xl font-bold text-white">Features</h2>
+                  <ul className="mt-4 flex flex-col gap-3">
+                    {post.featureList.map((f) => (
+                      <li key={f} className="flex items-center gap-3">
+                        <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-primary/20 text-primary-200">
+                          <CheckCircle2 className="h-4 w-4" />
+                        </span>
+                        <span className="text-slate-300">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </Reveal>
+            )}
 
             {/* Pillars */}
             {post.highlights && post.highlights.length > 0 && (

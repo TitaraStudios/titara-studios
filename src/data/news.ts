@@ -4,6 +4,7 @@ import type { NewsCategory, NewsPost } from '@/types'
 export const newsCategories: NewsCategory[] = [
   { id: 'all', label: 'All' },
   { id: 'announcements', label: 'Announcements' },
+  { id: 'devlog', label: 'Dev Log' },
 ]
 
 export const newsPosts: NewsPost[] = [
@@ -31,6 +32,31 @@ export const newsPosts: NewsPost[] = [
       { label: 'Inspire', icon: Heart },
     ],
     closing: 'The game is just beginning.',
+  },
+  {
+    id: 'monster-cubes-sneak-peek',
+    title: 'Sneak Peek: Monster Cubes',
+    excerpt:
+      'A first look at our upcoming mobile puzzle game — Monster Cubes! A simple-to-learn yet satisfying swipe puzzle where every move counts.',
+    category: 'devlog',
+    date: '2026-07-04',
+    readingTime: 2,
+    cover: '/assets/news/monster-cubes-sneak-peek.png',
+    author: 'Santhosh',
+    content: [
+      'Excited to share a sneak peek of our upcoming mobile puzzle game — Monster Cubes! 🎮👾',
+      'A simple-to-learn yet satisfying puzzle experience where every swipe moves all cubes at once. Merge matching monster cubes, solve clever challenges, and clear the board with strategic moves.',
+      'Currently in development using Unity, we are focusing on creating a smooth, satisfying and engaging puzzle experience.',
+      'Here is an early look at the game concept and visual direction. Feedback is always welcome!',
+    ],
+    featureList: [
+      'Easy-to-learn swipe mechanics',
+      'Unique monster cube characters',
+      'Logic-based puzzle challenges',
+      'Colorful visuals and juicy animations',
+      'Designed for quick and fun gameplay sessions',
+    ],
+    closing: 'More updates coming soon — stay tuned!',
   },
 ]
 

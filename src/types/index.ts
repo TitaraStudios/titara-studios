@@ -70,6 +70,8 @@ export interface NewsPost {
   content?: string[]
   /** Optional pillar row (e.g. Play / Create / Explore / Inspire). */
   highlights?: NewsHighlight[]
+  /** Optional bulleted feature list rendered on the detail page. */
+  featureList?: string[]
   /** Optional closing line rendered in an emphasised style. */
   closing?: string
 }
