@@ -1,7 +1,8 @@
 import PageTransition from '@/components/layout/PageTransition'
 import Seo from '@/components/seo/Seo'
 import Hero from '@/components/home/Hero'
-import FeaturedGames from '@/components/home/FeaturedGames'
+import FeaturedShowcase from '@/components/home/FeaturedShowcase'
+import MoreGames from '@/components/home/MoreGames'
 import Stats from '@/components/home/Stats'
 import AboutPreview from '@/components/home/AboutPreview'
 import LatestNews from '@/components/home/LatestNews'
@@ -12,11 +13,12 @@ export default function Home() {
     <PageTransition>
       <Seo
         title="Titara Studios"
-        description="We create polished and engaging mobile games built with Unity for Android, iOS and PC."
+        description="We create polished and engaging mobile games built with Unity for Android, iOS and PC. Now building Monster Cubes and Love Score."
         path="/"
       />
       <Hero />
-      <FeaturedGames />
+      <FeaturedShowcase />
+      <MoreGames />
       <AboutPreview />
       <Stats />
       <LatestNews />

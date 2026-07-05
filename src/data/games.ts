@@ -1,4 +1,4 @@
-import { Sparkles, Layers, Trophy, Wifi } from 'lucide-react'
+import { Sparkles, Layers, Trophy, Wifi, Heart, Users, Zap } from 'lucide-react'
 import type { Game } from '@/types'
 
 export const games: Game[] = [
@@ -54,6 +54,55 @@ export const games: Game[] = [
     ],
   },
   {
+    id: 'love-score',
+    title: 'Love Score',
+    tagline: 'Match. Score. Celebrate.',
+    genre: 'Casual Social',
+    platforms: ['Android', 'iOS'],
+    status: 'In Development',
+    description:
+      'A playful, feel-good social game about connection. Answer fun prompts, build your Love Score with friends and partners, and unlock delightful daily challenges. Light-hearted, charming and impossible to put down.',
+    banner: '/assets/games/love-score-banner.svg',
+    logo: '/assets/games/love-score-logo.svg',
+    accent: '#FF6B9D',
+    featured: true,
+    stores: {
+      googlePlay: '#',
+      appStore: '#',
+    },
+    longDescription:
+      'Love Score is a warm, playful social game about the little things that bring people together. Answer bite-sized prompts, compare answers with friends and partners, and watch your Love Score climb. With charming art, daily challenges and shareable results, it is designed to spark smiles and start conversations. Another polished title in development at Titara Studios.',
+    releaseDate: 'Coming 2026',
+    developer: 'Titara Studios',
+    price: 'Free to play',
+    features: [
+      {
+        title: 'Fun Compatibility Prompts',
+        description: 'Answer quick, playful questions and discover your Love Score with anyone.',
+        icon: Heart,
+      },
+      {
+        title: 'Play With Friends',
+        description: 'Invite friends and partners, compare answers and celebrate your matches.',
+        icon: Users,
+      },
+      {
+        title: 'Daily Challenges',
+        description: 'Fresh prompts and streaks every day keep the fun going.',
+        icon: Zap,
+      },
+      {
+        title: 'Shareable Results',
+        description: 'Beautiful, share-ready result cards made to spread the love.',
+        icon: Sparkles,
+      },
+    ],
+    screenshots: [
+      '/assets/games/screenshots/ls-1.svg',
+      '/assets/games/screenshots/ls-2.svg',
+    ],
+  },
+  {
     id: 'project-nova',
     title: 'Project Nova',
     tagline: 'An unannounced cosmic adventure.',
@@ -65,7 +114,6 @@ export const games: Game[] = [
     banner: '/assets/games/project-nova-banner.svg',
     logo: '/assets/games/monster-cubes-logo.svg',
     accent: '#00D2FF',
-    featured: true,
     stores: {
       steam: '#',
     },

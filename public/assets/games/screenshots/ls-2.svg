@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A1640" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8FB3" /><stop offset="1" stop-color="#FF3D77" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" />
+  <text x="480" y="90" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700" fill="#FFD93D" text-anchor="middle">DAILY CHALLENGE</text>
+  <!-- two cards -->
+  <g>
+    <rect x="180" y="160" width="240" height="240" rx="28" fill="#fff" opacity="0.08" />
+    <circle cx="300" cy="250" r="46" fill="#6C5CE7" />
+    <text x="300" y="350" font-family="Inter, sans-serif" font-size="22" fill="#fff" text-anchor="middle">Player A</text>
+    <rect x="540" y="160" width="240" height="240" rx="28" fill="#fff" opacity="0.08" />
+    <circle cx="660" cy="250" r="46" fill="#00D2FF" />
+    <text x="660" y="350" font-family="Inter, sans-serif" font-size="22" fill="#fff" text-anchor="middle">Player B</text>
+  </g>
+  <path d="M480 230 c-16 -24 -58 -16 -58 14 c0 24 40 46 58 64 c18 -18 58 -40 58 -64 c0 -30 -42 -38 -58 -14 Z" fill="url(#h)" />
+  <text x="480" y="470" font-family="Space Grotesk, sans-serif" font-size="26" font-weight="700" fill="#fff" text-anchor="middle">It's a match!</text>
+</svg>

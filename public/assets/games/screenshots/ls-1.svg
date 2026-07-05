@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A1533" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF8FB3" /><stop offset="1" stop-color="#FF3D77" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)" />
+  <text x="480" y="90" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" fill="#fff" text-anchor="middle">YOUR MATCH SCORE</text>
+  <circle cx="480" cy="290" r="120" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="20" />
+  <circle cx="480" cy="290" r="120" fill="none" stroke="url(#h)" stroke-width="20" stroke-linecap="round"
+          stroke-dasharray="640 754" transform="rotate(-90 480 290)" />
+  <text x="480" y="305" font-family="Space Grotesk, sans-serif" font-size="72" font-weight="700" fill="#fff" text-anchor="middle">92%</text>
+  <path d="M700 160 c-12 -18 -44 -12 -44 10 c0 18 30 34 44 48 c14 -14 44 -30 44 -48 c0 -22 -32 -28 -44 -10 Z" fill="url(#h)" />
+</svg>
