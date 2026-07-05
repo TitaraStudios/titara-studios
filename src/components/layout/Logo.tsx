@@ -1,28 +1,47 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { cn } from '@/lib/cn'
+import { assetUrl } from '@/lib/asset'
 
 interface LogoProps {
   className?: string
-  /** Hide the wordmark on very small screens if needed. */
-  showWordmark?: boolean
+  /** Height utility for the logo image, e.g. 'h-10'. */
+  size?: string
 }
 
-/** Titara Studios brand lockup — animated gradient mark + wordmark. */
-export default function Logo({ className, showWordmark = true }: LogoProps) {
+/**
+ * Titara Studios brand logo. Renders the PNG at `public/logo.png`; if that
+ * file is missing (or fails to load) it gracefully falls back to a styled
+ * text lockup so the header never looks broken.
+ */
+export default function Logo({ className, size = 'h-9 sm:h-10' }: LogoProps) {
+  const [errored, setErrored] = useState(false)
+
   return (
     <Link
       to="/"
       aria-label="Titara Studios — home"
-      className={cn('group inline-flex items-center gap-2.5', className)}
+      className={cn(
+        'group inline-flex items-center gap-2.5 transition-transform duration-300 hover:scale-[1.03]',
+        className,
+      )}
     >
-      <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-brand-gradient shadow-glow transition-transform duration-300 group-hover:scale-105">
-        <span className="font-display text-lg font-bold text-white">T</span>
-        <span className="absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-      </span>
-      {showWordmark && (
-        <span className="font-display text-lg font-bold tracking-tight text-white">
-          Titara<span className="text-gradient"> Studios</span>
-        </span>
+      {!errored ? (
+        <img
+          src={assetUrl('/logo.png')}
+          alt="Titara Studios"
+          onError={() => setErrored(true)}
+          className={cn('w-auto max-w-[190px] object-contain sm:max-w-[220px]', size)}
+        />
+      ) : (
+        <>
+          <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-brand-gradient shadow-glow">
+            <span className="font-display text-lg font-bold text-white">T</span>
+          </span>
+          <span className="font-display text-lg font-bold tracking-tight text-white">
+            Titara<span className="text-gradient"> Studios</span>
+          </span>
+        </>
       )}
     </Link>
   )
