@@ -8,6 +8,7 @@ import Home from './pages/Home'
 
 const Games = lazy(() => import('./pages/Games'))
 const GameDetail = lazy(() => import('./pages/GameDetail'))
+const GamePrivacy = lazy(() => import('./pages/GamePrivacy'))
 const About = lazy(() => import('./pages/About'))
 const Careers = lazy(() => import('./pages/Careers'))
 const News = lazy(() => import('./pages/News'))
@@ -23,6 +24,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="games" element={<Games />} />
         <Route path="games/:id" element={<GameDetail />} />
+        <Route path="games/:id/privacy" element={<GamePrivacy />} />
         <Route path="about" element={<About />} />
         <Route path="careers" element={<Careers />} />
         <Route path="news" element={<News />} />

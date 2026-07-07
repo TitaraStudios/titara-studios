@@ -27,6 +27,7 @@ import GameGallery from '@/components/games/GameGallery'
 import StoreButtons from '@/components/games/StoreButtons'
 import NotFound from './NotFound'
 import { getGameById } from '@/data/games'
+import { getGamePrivacy } from '@/data/gameLegal'
 import { assetUrl } from '@/lib/asset'
 import { staggerContainer, fadeUp, viewportOnce } from '@/lib/animations'
 import type { Platform, ReleaseStatus } from '@/types'
@@ -61,6 +62,7 @@ export default function GameDetail() {
   if (!game) return <NotFound />
 
   const StatusTone = STATUS_TONE[game.status]
+  const hasPrivacy = Boolean(getGamePrivacy(game.id))
 
   return (
     <PageTransition>
@@ -315,6 +317,19 @@ export default function GameDetail() {
                   <dt className="text-sm text-slate-400">Platforms</dt>
                   <dd className="text-sm font-medium text-white">{game.platforms.join(', ')}</dd>
                 </div>
+                {hasPrivacy && (
+                  <div className="flex items-center justify-between gap-4 py-3">
+                    <dt className="text-sm text-slate-400">Legal</dt>
+                    <dd className="text-sm font-medium">
+                      <Link
+                        to={`/games/${game.id}/privacy`}
+                        className="text-secondary hover:text-secondary-400"
+                      >
+                        Privacy Policy
+                      </Link>
+                    </dd>
+                  </div>
+                )}
               </dl>
             </Card>
           </Reveal>
