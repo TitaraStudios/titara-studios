@@ -1,4 +1,5 @@
-import { Github, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { Instagram, Linkedin } from 'lucide-react'
+import { DiscordIcon } from '@/components/icons/DiscordIcon'
 import type { NavLink, SocialLink } from '@/types'
 
 export const navLinks: NavLink[] = [
@@ -38,10 +39,9 @@ export const footerLinks: { heading: string; links: NavLink[] }[] = [
 ]
 
 export const socialLinks: SocialLink[] = [
-  { label: 'Twitter / X', href: 'https://twitter.com', icon: Twitter },
+  { label: 'Discord', href: 'https://discord.gg/titarastudios', icon: DiscordIcon },
   { label: 'Instagram', href: 'https://instagram.com', icon: Instagram },
   { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { label: 'GitHub', href: 'https://github.com', icon: Github },
 ]
 
 export const contactEmail = 'hello@titarastudios.com'

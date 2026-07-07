@@ -1,4 +1,8 @@
+import type { ComponentType, SVGProps } from 'react'
 import type { LucideIcon } from 'lucide-react'
+
+/** A lucide icon or any equivalent SVG component (e.g. our custom brand marks). */
+export type IconComponent = LucideIcon | ComponentType<SVGProps<SVGSVGElement>>
 
 export type Platform = 'Android' | 'iOS' | 'PC'
 
@@ -107,5 +111,5 @@ export interface NavLink {
 export interface SocialLink {
   label: string
   href: string
-  icon: LucideIcon
+  icon: IconComponent
 }
