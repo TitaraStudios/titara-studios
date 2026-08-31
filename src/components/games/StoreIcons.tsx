@@ -36,3 +36,16 @@ export function ItchIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
+
+/**
+ * A generic gamepad, used for CrazyGames. Deliberately not their brand mark: this file
+ * carries neutral glyphs, and reproducing a portal's logo is a trademark question we do
+ * not need to answer to label a link.
+ */
+export function CrazyGamesIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" aria-hidden="true" {...props}>
+      <path d="M8 6h8a6 6 0 0 1 5.94 5.11l.72 4.7A2.8 2.8 0 0 1 19.9 19a2.8 2.8 0 0 1-2.2-1.07l-1.3-1.66a1.4 1.4 0 0 0-1.1-.54H8.7c-.43 0-.84.2-1.1.54l-1.3 1.66A2.8 2.8 0 0 1 4.1 19a2.8 2.8 0 0 1-2.76-3.19l.72-4.7A6 6 0 0 1 8 6ZM6.6 9.4v1.4H5.2v1.4h1.4v1.4H8v-1.4h1.4v-1.4H8V9.4H6.6Zm9 .8a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm2.4 2.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+    </svg>
+  )
+}

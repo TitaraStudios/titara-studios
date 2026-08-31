@@ -4,17 +4,19 @@ import type { LucideIcon } from 'lucide-react'
 /** A lucide icon or any equivalent SVG component (e.g. our custom brand marks). */
 export type IconComponent = LucideIcon | ComponentType<SVGProps<SVGSVGElement>>
 
-export type Platform = 'Android' | 'iOS' | 'PC'
+export type Platform = 'Android' | 'iOS' | 'PC' | 'Web'
 
 export type ReleaseStatus = 'Released' | 'Coming Soon' | 'In Development' | 'Early Access'
 
-export type StoreId = 'googlePlay' | 'appStore' | 'steam' | 'itch'
+export type StoreId = 'googlePlay' | 'appStore' | 'steam' | 'itch' | 'crazyGames'
 
 export interface GameStoreLinks {
   googlePlay?: string
   appStore?: string
   steam?: string
   itch?: string
+  /** Browser build hosted on a web portal (CrazyGames). */
+  crazyGames?: string
 }
 
 export interface GameFeature {

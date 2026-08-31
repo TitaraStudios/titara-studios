@@ -10,6 +10,7 @@ import {
   Smartphone,
   Apple,
   Monitor,
+  Globe,
   CheckCircle2,
 } from 'lucide-react'
 import PageTransition from '@/components/layout/PageTransition'
@@ -36,6 +37,7 @@ const PLATFORM_ICON: Record<Platform, typeof Smartphone> = {
   Android: Smartphone,
   iOS: Apple,
   PC: Monitor,
+  Web: Globe,
 }
 
 const STATUS_TONE: Record<ReleaseStatus, 'success' | 'accent' | 'secondary'> = {

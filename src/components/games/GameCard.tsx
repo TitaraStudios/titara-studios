@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Smartphone, Apple, Monitor, ArrowUpRight } from 'lucide-react'
+import { Smartphone, Apple, Monitor, Globe, ArrowUpRight } from 'lucide-react'
 import type { Game, Platform, ReleaseStatus } from '@/types'
 import Card from '@/components/ui/Card'
 import Badge from '@/components/ui/Badge'
@@ -12,6 +12,7 @@ const PLATFORM_ICON: Record<Platform, typeof Smartphone> = {
   Android: Smartphone,
   iOS: Apple,
   PC: Monitor,
+  Web: Globe,
 }
 
 const STATUS_TONE: Record<ReleaseStatus, 'success' | 'accent' | 'secondary' | 'neutral'> = {

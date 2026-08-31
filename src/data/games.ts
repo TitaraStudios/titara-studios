@@ -1,7 +1,56 @@
-import { Sparkles, Layers, Trophy, Wifi, Heart, Users, Zap } from 'lucide-react'
+import { Sparkles, Layers, Trophy, Wifi, Heart, Users, Zap, Clock, Globe } from 'lucide-react'
 import type { Game } from '@/types'
 
 export const games: Game[] = [
+  {
+    id: 'blockture',
+    title: 'Blockture',
+    tagline: 'Cut. Scatter. Solve.',
+    genre: 'Picture Puzzle',
+    platforms: ['Web', 'Android'],
+    status: 'Coming Soon',
+    description:
+      'A hand-drawn picture is cut into irregular blocks and scattered across the board — drag every piece home before the clock runs out. Forgiving, one-handed and quietly moreish, with an album of finished pictures to fill.',
+    banner: '/assets/games/blockture-banner.webp',
+    logo: '/assets/games/blockture-logo.webp',
+    accent: '#1F7C77',
+    featured: true,
+    stores: {
+      crazyGames: '#',
+      googlePlay: '#',
+    },
+    longDescription:
+      'Blockture takes a warm, hand-drawn illustration, slices it into irregular blocks and scatters them across a grid. Your job is simply to put it back — but the picture can be rebuilt anywhere on the board, so there is no single correct answer, only the shape you find. Levels are timed and scored out of three stars, hints are there when a piece will not reveal itself, and every picture you finish is kept in an album you can return to. Built in Unity to run instantly in a browser and just as smoothly on the phone in your pocket.',
+    releaseDate: 'Coming 2026',
+    developer: 'Titara Studios',
+    price: 'Free to play',
+    features: [
+      {
+        title: 'Cut From the Picture',
+        description:
+          'Every level slices a hand-drawn illustration into irregular blocks — no two puzzles come apart the same way.',
+        icon: Layers,
+      },
+      {
+        title: 'Beat the Clock',
+        description:
+          'Levels are timed and scored out of three stars, and a near miss can always be rescued with thirty more seconds.',
+        icon: Clock,
+      },
+      {
+        title: 'Fill the Album',
+        description:
+          'Finished pictures go into a growing gallery you can flip back through any time.',
+        icon: Sparkles,
+      },
+      {
+        title: 'Browser or Phone',
+        description:
+          'Play instantly on the web with nothing to install, or take the same game with you on Android.',
+        icon: Globe,
+      },
+    ],
+  },
   {
     id: 'monster-cubes',
     title: 'Monster Cubes',

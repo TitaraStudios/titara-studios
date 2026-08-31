@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Download, ArrowRight, Smartphone, Apple, Monitor } from 'lucide-react'
+import { Download, ArrowRight, Smartphone, Apple, Monitor, Globe } from 'lucide-react'
 import Section from '@/components/ui/Section'
 import SectionHeading from '@/components/ui/SectionHeading'
 import Badge from '@/components/ui/Badge'
@@ -16,6 +16,7 @@ const PLATFORM_ICON: Record<Platform, typeof Smartphone> = {
   Android: Smartphone,
   iOS: Apple,
   PC: Monitor,
+  Web: Globe,
 }
 
 const AUTO_MS = 7000

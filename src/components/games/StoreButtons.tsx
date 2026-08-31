@@ -1,7 +1,7 @@
 import type { ComponentType, SVGProps } from 'react'
 import type { GameStoreLinks, StoreId } from '@/types'
 import { cn } from '@/lib/cn'
-import { AppStoreIcon, GooglePlayIcon, ItchIcon, SteamIcon } from './StoreIcons'
+import { AppStoreIcon, CrazyGamesIcon, GooglePlayIcon, ItchIcon, SteamIcon } from './StoreIcons'
 
 interface StoreMeta {
   label: string
@@ -13,14 +13,15 @@ const STORE_META: Record<StoreId, StoreMeta> = {
   appStore: { label: 'App Store', Icon: AppStoreIcon },
   steam: { label: 'Steam', Icon: SteamIcon },
   itch: { label: 'itch.io', Icon: ItchIcon },
+  crazyGames: { label: 'CrazyGames', Icon: CrazyGamesIcon },
 }
 
-const ORDER: StoreId[] = ['googlePlay', 'appStore', 'steam', 'itch']
+const ORDER: StoreId[] = ['googlePlay', 'appStore', 'crazyGames', 'steam', 'itch']
 
 interface StoreButtonsProps {
   stores: GameStoreLinks
   className?: string
-  /** When true, show all four stores as disabled if links are missing. */
+  /** Softens the empty state to 'coming soon' for a game that has not shipped yet. */
   comingSoon?: boolean
 }
 
