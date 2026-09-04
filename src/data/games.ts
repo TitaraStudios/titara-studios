@@ -1,7 +1,76 @@
-import { Sparkles, Layers, Trophy, Wifi, Heart, Users, Zap, Clock, Globe } from 'lucide-react'
+import {
+  Sparkles,
+  Layers,
+  Trophy,
+  Wifi,
+  Heart,
+  Users,
+  Zap,
+  Clock,
+  Globe,
+  Crosshair,
+  ShieldAlert,
+  Grid3x3,
+  Star,
+} from 'lucide-react'
 import type { Game } from '@/types'
 
 export const games: Game[] = [
+  {
+    id: 'couple-defense',
+    title: 'Couple Defense',
+    tagline: 'Protect her. Stop the thief!',
+    genre: 'Puzzle Shooter',
+    platforms: ['Android', 'iOS'],
+    status: 'In Development',
+    description:
+      'A one-tap tactical puzzler on a grid. Tap a bodyguard and his bullet flies in a straight line until something stops it — a wall, a crate, a thug, or the girl in the red dress you are meant to be protecting. Fire in the wrong order and you lose her.',
+    banner: '/assets/games/couple-defense-banner.webp',
+    logo: '/assets/games/couple-defense-logo.webp',
+    accent: '#3D8BEF',
+    featured: true,
+    stores: {
+      googlePlay: '#',
+      appStore: '#',
+    },
+    longDescription:
+      'Couple Defense turns a shoot-out into a puzzle. Every character stands on a tile facing one direction, and a tap sends a single bullet down that line until it hits something. Thugs go down in one shot, armoured ones need more, crates splinter and open a lane, walls never move, and sliding shields make a clear shot a question of timing. The catch is the girlfriend: she cannot shoot, cannot move, and one stray bullet ends the level. Forty-five hand-built levels teach a new idea at a time — firing order, cover, armour, limited magazines — and each one has a par shot count to beat for three stars. Built in Unity for the phone in your pocket.',
+    releaseDate: 'Coming 2026',
+    developer: 'Titara Studios',
+    price: 'Free to play',
+    features: [
+      {
+        title: 'One Tap, One Bullet',
+        description:
+          'Tap a bodyguard and his shot travels in a straight line until something stops it. No aiming, no timing — just the order you fire in.',
+        icon: Crosshair,
+      },
+      {
+        title: 'She Is in the Line of Fire',
+        description:
+          'The girl in the red dress cannot shoot and cannot move. Catch her with a stray bullet and the level is over.',
+        icon: ShieldAlert,
+      },
+      {
+        title: '45 Hand-Built Levels',
+        description:
+          'Walls, breakable crates, armoured thugs, limited magazines and sliding shields — one new idea at a time.',
+        icon: Grid3x3,
+      },
+      {
+        title: 'Beat Par for Three Stars',
+        description:
+          'Every level can be cleared in a set number of shots. Find that line and take all three stars.',
+        icon: Star,
+      },
+    ],
+    screenshots: [
+      '/assets/games/screenshots/cd-1.webp',
+      '/assets/games/screenshots/cd-2.webp',
+      '/assets/games/screenshots/cd-3.webp',
+      '/assets/games/screenshots/cd-4.webp',
+    ],
+  },
   {
     id: 'blockture',
     title: 'Blockture',
