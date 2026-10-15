@@ -12,10 +12,67 @@ import {
   ShieldAlert,
   Grid3x3,
   Star,
+  Waypoints,
+  Hand,
+  Infinity as InfinityIcon,
 } from 'lucide-react'
 import type { Game } from '@/types'
 
 export const games: Game[] = [
+  {
+    id: 'rope-puzzle',
+    title: 'Rope Puzzle',
+    tagline: 'Drag. Untangle. Match.',
+    genre: 'Logic Puzzle',
+    platforms: ['Android'],
+    status: 'Coming Soon',
+    description:
+      'Coloured ropes are tied between knots on a board of pegs. Drag the knots from peg to peg until the ropes draw exactly the picture on the target card. Calm, one-handed and endlessly satisfying, across a thousand levels.',
+    banner: '/assets/games/rope-puzzle-banner.webp',
+    logo: '/assets/games/rope-puzzle-logo.webp',
+    accent: '#20C9C0',
+    featured: true,
+    stores: {
+      googlePlay: '#',
+    },
+    longDescription:
+      'Rope Puzzle is a calm logic game about shapes. Every level shows a target picture made of coloured ropes, and a board where those same ropes have been pulled out of place. Drag a knot onto a new peg and every rope tied to it follows, so the trick is working out which knot to move first. Any arrangement that draws the target picture counts, so there is often more than one way to solve it. Boards grow from 3×3 to 7×7 as you play, adding more knots, more colours and more crossings, with an easier breather level after every short break. Built in Unity for the phone in your pocket.',
+    releaseDate: 'Coming 2026',
+    developer: 'Titara Studios',
+    price: 'Free to play',
+    features: [
+      {
+        title: 'Match the Picture',
+        description:
+          'Move the knots until the ropes draw exactly the shape on the target card. Any layout that draws the same picture wins.',
+        icon: Waypoints,
+      },
+      {
+        title: 'One Finger, No Timer',
+        description:
+          'Drag a knot, drop it on a peg. No clock and no lives, so you can think each move through.',
+        icon: Hand,
+      },
+      {
+        title: '1,000 Levels',
+        description:
+          'Boards grow from 3×3 to 7×7 with more knots, colours and crossings as you go.',
+        icon: InfinityIcon,
+      },
+      {
+        title: 'Satisfying to Solve',
+        description:
+          'Ropes glow as they click into place, with sound and haptics on every snap and a burst of confetti on the solve.',
+        icon: Sparkles,
+      },
+    ],
+    screenshots: [
+      '/assets/games/screenshots/rp-1.webp',
+      '/assets/games/screenshots/rp-2.webp',
+      '/assets/games/screenshots/rp-3.webp',
+      '/assets/games/screenshots/rp-4.webp',
+    ],
+  },
   {
     id: 'couple-defense',
     title: 'Couple Defense',
