@@ -240,7 +240,7 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
         table: {
           columns: ['Service', 'Purpose', 'Privacy policy'],
           rows: [
-            ['Google AdMob', 'Serving and measuring interstitial ads', 'support.google.com/admob/answer/6128543'],
+            ['Google AdMob', 'Serving and measuring banner and interstitial ads', 'support.google.com/admob/answer/6128543'],
             ['Google User Messaging Platform', 'Collecting and recording your advertising consent choice', 'policies.google.com/privacy'],
             ['Google Play Services', 'Core platform services (Android)', 'policies.google.com/privacy'],
           ],
@@ -248,9 +248,9 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
       },
       {
         heading: 'Advertising',
-        body: 'Rope Puzzle is free to play and funded by advertising. You will occasionally see a full-screen ad between levels; the first appears only after you have cleared several levels, and ads never interrupt a level in progress. Ads are served by Google AdMob, which may use your advertising identifier and usage data to show more relevant ads and measure their effectiveness.',
+        body: 'Rope Puzzle is free to play and funded by advertising. A banner ad is shown at the bottom of the screen whenever the Game is open, and you will occasionally see a full-screen ad between levels; the first full-screen ad appears only after you have cleared several levels, and full-screen ads never interrupt a level in progress. Ads are served by Google AdMob, which may use your advertising identifier and usage data to show more relevant ads and measure their effectiveness.',
         bullets: [
-          'If you are in the EEA, the UK or another region that requires it, we ask for your consent before personalised ads are shown. If you decline, only non-personalised ads are requested.',
+          'If you are in the EEA, the UK or another region that requires it, we ask for your consent before personalised ads are shown. If you decline, only non-personalised ads are requested. You can change your choice at any time from "Privacy settings" on the Game\'s title screen.',
           'Android: Settings → Google → Ads → Reset advertising ID / Delete advertising ID.',
         ],
       },
