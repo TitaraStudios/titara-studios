@@ -236,13 +236,15 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
       },
       {
         heading: 'Third-party services',
-        body: 'Rope Puzzle uses the following third-party services, each with its own privacy policy. We encourage you to review them.',
+        body: 'Rope Puzzle uses the following third-party services, each with its own privacy policy. We encourage you to review them. While the Game is open it also periodically checks that your device is online and that ads can be reached, by making simple web requests to Google and Cloudflare servers. Like any web request these reveal your IP address to those servers, but no game data or personal information is sent.',
         table: {
           columns: ['Service', 'Purpose', 'Privacy policy'],
           rows: [
             ['Google AdMob', 'Serving and measuring banner and interstitial ads', 'support.google.com/admob/answer/6128543'],
             ['Google User Messaging Platform', 'Collecting and recording your advertising consent choice', 'policies.google.com/privacy'],
             ['Google Play Services', 'Core platform services (Android)', 'policies.google.com/privacy'],
+            ['Google (gstatic.com)', 'Checking that your device is online', 'policies.google.com/privacy'],
+            ['Cloudflare', 'Checking that your device is online', 'cloudflare.com/privacypolicy'],
           ],
         },
       },
