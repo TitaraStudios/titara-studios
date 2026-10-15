@@ -45,4 +45,4 @@ export const socialLinks: SocialLink[] = [
 ]
 
 export const contactEmail = 'hello@titarastudios.com'
-export const supportEmail = 'support@titarastudios.com'
+export const supportEmail = 'titarastudios@gmail.com'
