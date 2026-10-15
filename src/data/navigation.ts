@@ -44,5 +44,5 @@ export const socialLinks: SocialLink[] = [
   { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
 ]
 
-export const contactEmail = 'hello@titarastudios.com'
+export const contactEmail = 'titarastudios@gmail.com'
 export const supportEmail = 'titarastudios@gmail.com'
