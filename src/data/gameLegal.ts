@@ -286,6 +286,90 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
       },
     ],
   },
+  'alien-smash': {
+    game: 'Alien Smash',
+    updated: 'October 21, 2026',
+    effective: 'October 21, 2026',
+    intro:
+      'This Privacy Policy explains how Titara Studios collects, uses and protects your information when you play Alien Smash (the "Game"), available as an Android app on Google Play. By downloading, installing or using Alien Smash you agree to the practices described here. If you do not agree, please do not use the Game.',
+    sections: [
+      {
+        heading: 'Who we are',
+        body: 'Alien Smash is developed and published by Titara Studios, an independent mobile game studio based in India. You can reach us any time at the contact address at the bottom of this page.',
+      },
+      {
+        heading: 'The short version',
+        body: 'Alien Smash has no account system, no sign-up, no chat and no in-app purchases. We never ask you for your name, email address, phone number, date of birth or location, and we do not collect them. The only personal data involved is the advertising identifier our ad partner uses to show you ads, and that is controlled by your own device settings.',
+      },
+      {
+        heading: 'Information we collect',
+        body: 'We deliberately collect as little as possible. Alien Smash contains no analytics SDK and no crash-reporting SDK of our own, so there is no user profile and no behavioural analytics tied to you.',
+        bullets: [
+          'Game progress and settings — the world you last played, your selected weapon, how many times you have destroyed each world, and whether sound and vibration are switched on. These are stored only on your device and are never sent to us.',
+          'Advertising identifiers — a resettable advertising ID (the Google Advertising ID) used by our ad partner to serve and measure ads, subject to your device settings and your consent choice.',
+          'Information our ad partner collects itself — device type, operating system, coarse region derived from your IP address, and how you interacted with an ad. This is collected by Google AdMob under its own privacy policy, not by us.',
+        ],
+      },
+      {
+        heading: 'How we use your information',
+        body: 'We use the information above only to save your progress and settings on your device, to show the advertising that keeps the Game free, and to keep the Game working correctly. We do not sell your personal information, we do not build advertising profiles ourselves, and we do not share your data with anyone beyond the service providers listed below.',
+      },
+      {
+        heading: 'Third-party services',
+        body: 'Alien Smash uses the following third-party services, each with its own privacy policy. We encourage you to review them. While the Game is open it also periodically checks that your device is online and that ads can be reached, by making simple web requests to Google and Cloudflare servers. Like any web request these reveal your IP address to those servers, but no game data or personal information is sent.',
+        table: {
+          columns: ['Service', 'Purpose', 'Privacy policy'],
+          rows: [
+            ['Google AdMob', 'Serving and measuring banner and interstitial ads', 'support.google.com/admob/answer/6128543'],
+            ['Google User Messaging Platform', 'Collecting and recording your advertising consent choice', 'policies.google.com/privacy'],
+            ['Google Play Services', 'Core platform services (Android)', 'policies.google.com/privacy'],
+            ['Google (gstatic.com)', 'Checking that your device is online', 'policies.google.com/privacy'],
+            ['Cloudflare', 'Checking that your device is online', 'cloudflare.com/privacypolicy'],
+          ],
+        },
+      },
+      {
+        heading: 'Advertising',
+        body: 'Alien Smash is free to play and funded by advertising. A banner ad is shown at the bottom of the screen whenever the Game is open, and you will occasionally see a full-screen ad after a world is destroyed, when you move on from the results screen. The first worlds you destroy are ad-free, full-screen ads are spaced at least a minute and a half apart, and they never interrupt a world you are still smashing. Ads are served by Google AdMob, which may use your advertising identifier and usage data to show more relevant ads and measure their effectiveness.',
+        bullets: [
+          'If you are in the EEA, the UK or another region that requires it, we ask for your consent before personalised ads are shown. If you decline, only non-personalised ads are requested. You can change your choice at any time from "Privacy settings" on the Game\'s title screen.',
+          'Android: Settings → Google → Ads → Reset advertising ID / Delete advertising ID.',
+        ],
+      },
+      {
+        heading: 'Notifications',
+        body: 'With your permission, the Game schedules a reminder on your device for the evening (7 PM India time). These are local notifications created by the Game itself: no server sends them and no data is collected through them. You can turn them off at any time in your device settings (Settings → Apps → Alien Smash → Notifications).',
+      },
+      {
+        heading: "Children's privacy",
+        body: 'Alien Smash is a general-audience game. It is not directed at children under 13, and we do not knowingly collect personal information from them. We do not ask for age in the Game, so where our advertising partner identifies a user as a child, or where a store or regulator requires it, only non-personalised (contextual) advertising is served. If you believe a child has provided personal information to us, contact us and we will delete it.',
+      },
+      {
+        heading: 'Data retention',
+        body: 'Your progress and settings live only on your device until you clear the app’s storage or uninstall the Game, which deletes them permanently. There is no cloud save. Data held by our advertising partner is retained under its own policy, which the link above describes.',
+      },
+      {
+        heading: 'Your rights and choices',
+        body: 'Depending on where you live, you may have rights to access, correct or delete your information, object to or restrict processing, and withdraw consent. Because Alien Smash holds no account and sends no game data to us, most of these are directly in your hands: uninstall the app or clear its storage to erase your progress, and reset or delete your advertising ID in your device settings. Where a consent form is shown, you can change your advertising consent choice at any time. For anything else, contact us at the address below.',
+      },
+      {
+        heading: 'Data security',
+        body: 'We take reasonable technical and organizational measures to protect the limited information involved. Data sent by our advertising partner is encrypted in transit. No method of transmission or storage is completely secure, however, and we cannot guarantee absolute security.',
+      },
+      {
+        heading: 'International data transfers',
+        body: "Your information may be processed on servers outside your country of residence, for example by Google's global infrastructure. Where required, appropriate safeguards are applied by that provider.",
+      },
+      {
+        heading: 'Changes to this policy',
+        body: 'We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above and, where appropriate, notify you in the Game or on this website. Continued use of the Game after changes take effect constitutes acceptance of the updated policy.',
+      },
+      {
+        heading: 'Contact us',
+        body: `If you have any questions about this Privacy Policy or your data, email us at ${supportEmail}. We are Titara Studios, and you can also reach us through the Support link on this website.`,
+      },
+    ],
+  },
 }
 
 export const getGamePrivacy = (id: string): GameLegalDoc | undefined => gamePrivacy[id]

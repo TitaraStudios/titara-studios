@@ -15,10 +15,66 @@ import {
   Waypoints,
   Hand,
   Infinity as InfinityIcon,
+  Bomb,
+  Orbit,
 } from 'lucide-react'
 import type { Game } from '@/types'
 
 export const games: Game[] = [
+  {
+    id: 'alien-smash',
+    title: 'Alien Smash',
+    tagline: 'Pick a weapon. Smash a world.',
+    genre: 'Destruction Sandbox',
+    platforms: ['Android'],
+    status: 'Coming Soon',
+    description:
+      'Five alien worlds, nine ridiculous weapons and no rules. Carve canyons with a plasma laser, rain meteors on dino-alien villages, drop a black hole into the crust, then crack the whole planet open and watch it fall apart.',
+    banner: '/assets/games/alien-smash-banner.webp',
+    logo: '/assets/games/alien-smash-logo.webp',
+    accent: '#7CFF4F',
+    featured: true,
+    stores: {
+      googlePlay: '#',
+    },
+    longDescription:
+      'Alien Smash is a planet-destruction sandbox you can play with one thumb. Spin a living alien world, choose from nine weapons and start wrecking: the plasma laser burns trenches into the surface, missiles and meteors leave smoking craters, an invader swarm hunts the locals, and a nova nuke flattens everything in sight. Every hit deforms the ground, scatters the creatures and topples their buildings until the planet finally shatters into pieces. Then pick the next world, from the jungles of Verdant Prime to the frozen tundra of Cryonis, and do it all again. No timers and no fail state, just smashing. Built in Unity for the phone in your pocket.',
+    releaseDate: 'Coming 2026',
+    developer: 'Titara Studios',
+    price: 'Free to play',
+    features: [
+      {
+        title: 'Nine Weapons',
+        description:
+          'Plasma laser, missile barrage, meteor shower, rail cannon, invader swarm, rogue asteroid, nova nuke, black hole and the planet cracker.',
+        icon: Bomb,
+      },
+      {
+        title: 'Five Alien Worlds',
+        description:
+          'Jungle, volcano, ice, crystal and toxic swamp worlds, each with its own creatures, buildings and colours.',
+        icon: Orbit,
+      },
+      {
+        title: 'Real Destruction',
+        description:
+          'Craters dig into the surface, creatures scatter, buildings fall, and a badly damaged world breaks into pieces.',
+        icon: Zap,
+      },
+      {
+        title: 'One Thumb, No Rules',
+        description:
+          'Tap or hold to fire, drag to spin, pinch to zoom. No timers, no lives, no fail state.',
+        icon: Hand,
+      },
+    ],
+    screenshots: [
+      '/assets/games/screenshots/as-1.webp',
+      '/assets/games/screenshots/as-2.webp',
+      '/assets/games/screenshots/as-3.webp',
+      '/assets/games/screenshots/as-4.webp',
+    ],
+  },
   {
     id: 'rope-puzzle',
     title: 'Rope Puzzle',
