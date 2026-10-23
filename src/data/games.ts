@@ -17,10 +17,67 @@ import {
   Infinity as InfinityIcon,
   Bomb,
   Orbit,
+  TrainFront,
+  Brain,
+  Gift,
 } from 'lucide-react'
 import type { Game } from '@/types'
 
 export const games: Game[] = [
+  {
+    id: 'train-brain',
+    title: 'Train Brain',
+    tagline: 'Untangle the trains. Clear the way.',
+    genre: 'Puzzle',
+    platforms: ['Android'],
+    status: 'Coming Soon',
+    description:
+      'A packed rail yard and only one way out for each train. Tap a train to send it rolling, but only when the track ahead of its engine is clear. Find the right order, beat the clock and empty the board in 1000 levels.',
+    banner: '/assets/games/train-brain-banner.webp',
+    logo: '/assets/games/train-brain-logo.webp',
+    accent: '#8B5CF6',
+    featured: true,
+    stores: {
+      googlePlay: '#',
+    },
+    longDescription:
+      'Train Brain is a relaxing logic puzzle about traffic jams on the rails. Every board is crowded with colourful trains pointing in different directions. Tap one and it drives straight ahead and off the board, as long as nothing stands in its way. Send a train into another and you lose a heart, so look before you tap. Boards start small and grow into huge tangles of 28 trains or more, with a timer to keep you sharp. Stuck? Use a Hint to find a free train, Undo a bump, or Freeze the clock, all paid for with coins you earn by clearing levels. Come back every day for the Daily challenge and its bonus coins. Built in Unity for quick sessions on your phone.',
+    releaseDate: 'Coming 2026',
+    developer: 'Titara Studios',
+    price: 'Free to play',
+    features: [
+      {
+        title: '1000 Levels',
+        description:
+          'From a handful of trains to giant rail yards, easy to hard, with new boards that keep going after level 1000.',
+        icon: TrainFront,
+      },
+      {
+        title: 'One Simple Rule',
+        description:
+          'A train leaves only when the track ahead of its engine is clear. Easy to learn, surprisingly tricky to master.',
+        icon: Brain,
+      },
+      {
+        title: 'Hint, Undo, Freeze',
+        description:
+          'Three boosters for tough boards, bought with coins earned in the game. No real-money purchases.',
+        icon: Sparkles,
+      },
+      {
+        title: 'Daily Challenge',
+        description:
+          'A fresh board every day with bonus coins for clearing it, plus an optional evening reminder.',
+        icon: Gift,
+      },
+    ],
+    screenshots: [
+      '/assets/games/screenshots/tb-1.webp',
+      '/assets/games/screenshots/tb-2.webp',
+      '/assets/games/screenshots/tb-3.webp',
+      '/assets/games/screenshots/tb-4.webp',
+    ],
+  },
   {
     id: 'alien-smash',
     title: 'Alien Smash',
