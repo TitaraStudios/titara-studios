@@ -138,7 +138,7 @@ export const games: Game[] = [
     tagline: 'Drag. Untangle. Match.',
     genre: 'Logic Puzzle',
     platforms: ['Android'],
-    status: 'Coming Soon',
+    status: 'Released',
     description:
       'Coloured ropes are tied between knots on a board of pegs. Drag the knots from peg to peg until the ropes draw exactly the picture on the target card. Calm, one-handed and endlessly satisfying, across a thousand levels.',
     banner: '/assets/games/rope-puzzle-banner.webp',
@@ -146,11 +146,11 @@ export const games: Game[] = [
     accent: '#20C9C0',
     featured: true,
     stores: {
-      googlePlay: '#',
+      googlePlay: 'https://play.google.com/store/apps/details?id=com.titarastudios.ropepuzzle',
     },
     longDescription:
       'Rope Puzzle is a calm logic game about shapes. Every level shows a target picture made of coloured ropes, and a board where those same ropes have been pulled out of place. Drag a knot onto a new peg and every rope tied to it follows, so the trick is working out which knot to move first. Any arrangement that draws the target picture counts, so there is often more than one way to solve it. Boards grow from 3×3 to 7×7 as you play, adding more knots, more colours and more crossings, with an easier breather level after every short break. Built in Unity for the phone in your pocket.',
-    releaseDate: 'Coming 2026',
+    releaseDate: 'October 2026',
     developer: 'Titara Studios',
     price: 'Free to play',
     features: [
