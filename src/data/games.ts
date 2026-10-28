@@ -30,7 +30,7 @@ export const games: Game[] = [
     tagline: 'Untangle the trains. Clear the way.',
     genre: 'Puzzle',
     platforms: ['Android'],
-    status: 'Coming Soon',
+    status: 'Released',
     description:
       'A packed rail yard and only one way out for each train. Tap a train to send it rolling, but only when the track ahead of its engine is clear. Find the right order, beat the clock and empty the board in 1000 levels.',
     banner: '/assets/games/train-brain-banner.webp',
@@ -38,11 +38,11 @@ export const games: Game[] = [
     accent: '#8B5CF6',
     featured: true,
     stores: {
-      googlePlay: '#',
+      googlePlay: 'https://play.google.com/store/apps/details?id=com.titarastudios.trainbrain',
     },
     longDescription:
       'Train Brain is a relaxing logic puzzle about traffic jams on the rails. Every board is crowded with colourful trains pointing in different directions. Tap one and it drives straight ahead and off the board, as long as nothing stands in its way. Send a train into another and you lose a heart, so look before you tap. Boards start small and grow into huge tangles of 28 trains or more, with a timer to keep you sharp. Stuck? Use a Hint to find a free train, Undo a bump, or Freeze the clock, all paid for with coins you earn by clearing levels. Come back every day for the Daily challenge and its bonus coins. Built in Unity for quick sessions on your phone.',
-    releaseDate: 'Coming 2026',
+    releaseDate: 'October 2026',
     developer: 'Titara Studios',
     price: 'Free to play',
     features: [
