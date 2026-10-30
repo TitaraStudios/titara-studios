@@ -40,32 +40,48 @@ export interface GameLegalDoc {
 export const gamePrivacy: Record<string, GameLegalDoc> = {
   'monster-cubes': {
     game: 'Monster Cubes',
-    updated: 'July 7, 2026',
-    effective: 'July 7, 2026',
+    updated: 'October 30, 2026',
+    effective: 'October 30, 2026',
     intro:
-      'This Privacy Policy explains how Titara Studios collects, uses, and protects your information when you play Monster Cubes (the "Game"), available on the Google Play Store and Apple App Store. By downloading, installing, or using Monster Cubes, you agree to the practices described here. If you do not agree, please do not use the Game.',
+      'This Privacy Policy explains how Titara Studios collects, uses, and protects your information when you play Monster Cubes (the "Game") on Android, available on Google Play. By downloading, installing, or using Monster Cubes, you agree to the practices described here. If you do not agree, please do not use the Game.',
     sections: [
       {
         heading: 'Who we are',
         body: 'Monster Cubes is developed and published by Titara Studios, an independent mobile game studio based in India. You can reach us any time at the contact address at the bottom of this page.',
       },
       {
+        heading: 'The short version',
+        body: 'Monster Cubes has no accounts of its own, no analytics SDK and no crash-reporting SDK. Your level progress and settings stay on your device. The data that does leave your device goes to Google: to show ads (Google AdMob), to record your ad-consent choice where the law requires it, to process the optional No Ads purchase (Google Play), and, if you use it, to sign you in to Google Play Games.',
+      },
+      {
         heading: 'Information we collect',
-        body: 'We aim to collect only what we need to run and improve the Game. During onboarding we may ask for your age or age range (to verify eligibility and apply age-appropriate content and advertising rules) and, optionally, your gender (to understand our audience). You can decline optional questions. We do not ask for your name, email address, phone number, or precise home address inside the Game.',
+        body: 'We do not ask for your name, email address, phone number, age or address inside the Game. The following information is processed, mostly by our advertising partner Google AdMob:',
         bullets: [
-          'Device information — device model, operating system version, language, region and screen characteristics.',
-          'Usage and gameplay data — levels played, progress, session length, features used, in-app events, and crash/diagnostic reports.',
-          'Advertising identifiers — a resettable advertising ID (Google Advertising ID / Apple IDFA) used to serve and measure ads, subject to your device settings.',
-          'Approximate location — derived from your IP address or region setting. We do not collect precise GPS location.',
+          'Advertising identifiers — the resettable Google Advertising ID, used to serve and measure ads, subject to your device settings and consent choice.',
+          'Approximate location — derived from your IP address. We do not collect precise GPS location.',
+          'Device and app information — device model, operating system version, language and screen characteristics.',
+          'App interactions and diagnostics — ad impressions and clicks, and ad-SDK diagnostic data, used for advertising, analytics and fraud prevention.',
         ],
       },
       {
+        heading: 'Where your progress is saved',
+        body: 'Your current level, sound and vibration settings, and whether you own No Ads are stored only on your device. Uninstalling the Game or clearing its storage removes them. We do not run a server and do not receive this data.',
+      },
+      {
         heading: 'Purchases',
-        body: 'If you make in-app purchases, the transaction is handled by Google Play Billing or the Apple App Store. We receive confirmation that a purchase occurred and what was purchased, but we do not collect or store your full payment card details.',
+        body: 'Monster Cubes offers one optional purchase, No Ads, which removes banner and pop-up ads and makes the Clear Level option free. The transaction is handled entirely by Google Play Billing: we receive confirmation that the purchase happened, but never your payment details. Google Play restores the purchase automatically when you reinstall the Game with the same Google account.',
+      },
+      {
+        heading: 'Internet check',
+        body: 'The Game needs an internet connection to play, because it is supported by ads. To check this, it sends a small request to Google (clients3.google.com) and to Google\'s ad servers (googleads.g.doubleclick.net and pagead2.googlesyndication.com). These requests carry no personal data beyond what any internet request reveals, such as your IP address.',
+      },
+      {
+        heading: 'Notifications',
+        body: 'With your permission, the Game schedules a local reminder on your device once a day in the evening. These notifications are created on your device; no data is sent to us or to anyone else to deliver them. You can turn them off at any time in your device settings.',
       },
       {
         heading: 'How we use your information',
-        body: 'We use the information above to operate and provide the core features of the Game; save and restore your progress and settings; show relevant advertising and measure ad performance; understand how players use the Game so we can fix bugs and improve it; verify eligibility and apply age-appropriate settings; detect and prevent fraud or abuse; and comply with legal obligations. We do not sell your personal information.',
+        body: 'Information is used to show ads that keep the Game free, measure those ads and prevent ad fraud; to process and restore your No Ads purchase; to sign you in to Google Play Games if you use it; and to comply with legal obligations. We do not sell your personal information.',
       },
       {
         heading: 'Third-party services',
@@ -73,37 +89,35 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
         table: {
           columns: ['Service', 'Purpose', 'Privacy policy'],
           rows: [
-            ['Google Firebase Analytics', 'Anonymous / aggregated usage analytics', 'firebase.google.com/support/privacy'],
-            ['Google Firebase Crashlytics', 'Crash and stability reporting', 'firebase.google.com/support/privacy'],
-            ['Google AdMob', 'Serving and measuring in-app advertising', 'support.google.com/admob/answer/6128543'],
-            ['Google Play Services / Billing', 'Core platform services and purchases (Android)', 'policies.google.com/privacy'],
-            ['Apple App Store / StoreKit', 'Core platform services and purchases (iOS)', 'apple.com/legal/privacy'],
+            ['Google AdMob', 'Serving and measuring banner, interstitial and rewarded ads', 'support.google.com/admob/answer/6128543'],
+            ['Google User Messaging Platform', 'Collecting and recording your advertising consent choice', 'policies.google.com/privacy'],
+            ['Google Play Billing', 'Processing and restoring the No Ads purchase', 'policies.google.com/privacy'],
+            ['Google Play Games Services', 'Optional sign-in to Google Play Games', 'policies.google.com/privacy'],
           ],
         },
       },
       {
         heading: 'Advertising',
-        body: 'The Game displays advertising provided by Google AdMob, including banner, interstitial and rewarded ads. Advertising partners may use advertising identifiers and usage data to show more relevant ads and measure their effectiveness. For users in the EEA, UK and other regions requiring it, we present a consent request for personalized advertising the first time it is required. You can control ad personalization through your device settings:',
+        body: 'The Game shows ads from Google AdMob: a banner at the bottom of the screen, occasional full-screen ads between levels, and a rewarded video you can choose to watch to clear a level. Players who buy No Ads see no banner or full-screen ads. If you are in the EEA, the UK, Switzerland or another region that requires it, we show Google\'s consent form before any ad is requested. If you decline, you still see ads, but they are not personalised. You can change your choice at any time from "Privacy settings" in the Game\'s Settings screen. You can also control ad personalisation on your device:',
         bullets: [
-          'Android: Settings → Google → Ads → Reset advertising ID / Opt out of Ads Personalization.',
-          'iOS: Settings → Privacy & Security → Tracking / Apple Advertising.',
+          'Android: Settings → Google → Ads → Delete or reset advertising ID / Opt out of Ads Personalization.',
         ],
       },
       {
         heading: "Children's privacy",
-        body: 'Monster Cubes is intended for a general audience aged 13 and over. We collect age information during onboarding in part to apply age-appropriate settings. We do not knowingly collect personal information from children below the applicable age of digital consent without verifiable parental consent. For users identified as below that age, we limit data collection and serve only non-personalized (contextual) advertising where required by law (for example COPPA in the US and GDPR-K in the EU). If you believe a child has provided us personal information without appropriate consent, contact us and we will delete it.',
+        body: 'Monster Cubes is a general-audience puzzle game. It is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us personal information, contact us and we will help remove it.',
       },
       {
         heading: 'Data retention',
-        body: "We retain automatically collected and analytics data for as long as necessary to fulfil the purposes described here, and as required by our service providers' retention settings. Aggregated or anonymized data may be retained for longer. Your local game progress is stored on your device and, where applicable, in your platform cloud save.",
+        body: "We do not store your data on our own servers. Data processed by Google is retained according to Google's own retention settings and policies. Data stored on your device stays there until you uninstall the Game or clear its storage.",
       },
       {
         heading: 'Your rights and choices',
-        body: 'Depending on where you live, you may have rights to access, correct or delete your information, object to or restrict certain processing, and withdraw consent (for example, ad personalization). To exercise any of these rights, contact us using the address below — we may need to verify your request first. You can also clear locally stored data by uninstalling the Game or clearing its storage in your device settings.',
+        body: 'Depending on where you live, you may have rights to access, correct or delete your information, object to or restrict certain processing, and withdraw consent (for example, ad personalisation, from "Privacy settings" in the Game). For data held by Google, you can also use Google\'s own privacy tools. To exercise any of these rights, contact us using the address below.',
       },
       {
         heading: 'Data security',
-        body: 'We take reasonable technical and organizational measures to protect your information. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.',
+        body: 'Data the Game sends is encrypted in transit. We take reasonable measures to protect the limited information involved; however, no method of transmission or storage is completely secure.',
       },
       {
         heading: 'International data transfers',
@@ -111,7 +125,7 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
       },
       {
         heading: 'Changes to this policy',
-        body: 'We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above and, where appropriate, notify you within the Game or on our website. Your continued use of the Game after changes take effect constitutes acceptance of the updated policy.',
+        body: 'We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above. Your continued use of the Game after changes take effect constitutes acceptance of the updated policy.',
       },
       {
         heading: 'Contact us',
