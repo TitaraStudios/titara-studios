@@ -20,10 +20,66 @@ import {
   TrainFront,
   Brain,
   Gift,
+  Swords,
+  Coins,
 } from 'lucide-react'
 import type { Game } from '@/types'
 
 export const games: Game[] = [
+  {
+    id: 'gloop-blaster',
+    title: 'Gloop Blaster',
+    tagline: 'Aim, blast, splat the gloops.',
+    genre: 'Arcade Shooter',
+    platforms: ['Android'],
+    status: 'Coming Soon',
+    description:
+      'An invasion of wobbly jelly monsters is oozing over six candy-coloured worlds. Ride the rails, drag to aim and splat every gloop in your way with goo blasters, jelly gatlings, duck bazookas and more, then take down King Gloop himself.',
+    banner: '/assets/games/gloop-blaster-banner.webp',
+    logo: '/assets/games/gloop-blaster-logo.webp',
+    accent: '#8BE83A',
+    featured: true,
+    stores: {
+      googlePlay: '#',
+    },
+    longDescription:
+      'Gloop Blaster is a one-thumb arcade shooter full of squishy jelly monsters. Each level carries you along a track through a bright, toy-like world: hold to fire, drag to swing your aim, and splat the gloops before they reach you. Spitters lob goo, splitters burst into smaller gloops, ghost gloops fade in and out, and every tenth level King Gloop himself rolls in with a boss health bar to match. Smash crates and pop coin balloons on the way, chain kills for combos, and spend your coins upgrading eight ridiculous guns, from the trusty Goo Blaster and the Splat Shotgun to the Duck Bazooka, the Bananarang and the Melon Mortar. A hundred levels across Candy Sky, Lava Dunes, Neon Night, Mint Lagoon, Jelly Jungle and Bubblegum Sunset, with no purchases and no sign-up. Built in Unity for the phone in your pocket.',
+    releaseDate: 'Coming 2026',
+    developer: 'Titara Studios',
+    price: 'Free to play',
+    features: [
+      {
+        title: 'Eight Silly Guns',
+        description:
+          'Goo Blaster, Splat Shotgun, Jelly Gatling, Fizz Rocket, Duck Bazooka, Bananarang, Bubble Blaster and Melon Mortar, each unlocked as you go.',
+        icon: Crosshair,
+      },
+      {
+        title: '100 Levels, Six Worlds',
+        description:
+          'Candy Sky, Lava Dunes, Neon Night, Mint Lagoon, Jelly Jungle and Bubblegum Sunset, with a King Gloop boss every tenth level.',
+        icon: Swords,
+      },
+      {
+        title: 'Squishy, Splatty Feel',
+        description:
+          'Gloops wobble, burst and splash goo across the screen, with combos, slow-motion finishes and vibration on every hit.',
+        icon: Zap,
+      },
+      {
+        title: 'Upgrade and Continue',
+        description:
+          'Coins from every run upgrade your guns or buy a second chance. No purchases, no accounts.',
+        icon: Coins,
+      },
+    ],
+    screenshots: [
+      '/assets/games/screenshots/gb-1.webp',
+      '/assets/games/screenshots/gb-2.webp',
+      '/assets/games/screenshots/gb-3.webp',
+      '/assets/games/screenshots/gb-4.webp',
+    ],
+  },
   {
     id: 'train-brain',
     title: 'Train Brain',
