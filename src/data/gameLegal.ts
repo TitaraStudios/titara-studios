@@ -470,7 +470,7 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
   },
   'gloop-blaster': {
     game: 'Gloop Blaster',
-    updated: 'November 12, 2026',
+    updated: 'November 14, 2026',
     effective: 'November 12, 2026',
     intro:
       'This Privacy Policy explains how Titara Studios collects, uses and protects your information when you play Gloop Blaster (the "Game"), available as an Android app on Google Play. By downloading, installing or using Gloop Blaster you agree to the practices described here. If you do not agree, please do not use the Game.',
@@ -502,7 +502,7 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
         table: {
           columns: ['Service', 'Purpose', 'Privacy policy'],
           rows: [
-            ['Google AdMob', 'Serving and measuring banner and interstitial ads', 'support.google.com/admob/answer/6128543'],
+            ['Google AdMob', 'Serving and measuring banner, interstitial and rewarded ads', 'support.google.com/admob/answer/6128543'],
             ['Google User Messaging Platform', 'Collecting and recording your advertising consent choice', 'policies.google.com/privacy'],
             ['Google Play Services', 'Core platform services (Android)', 'policies.google.com/privacy'],
             ['Google (gstatic.com)', 'Checking that your device is online', 'policies.google.com/privacy'],
@@ -514,6 +514,7 @@ export const gamePrivacy: Record<string, GameLegalDoc> = {
         heading: 'Advertising',
         body: 'Gloop Blaster is free to play and funded by advertising. A banner ad is shown at the bottom of the screen whenever the Game is open, and you will occasionally see a full-screen ad between levels, when you move on from a level you have just won. The first levels are ad-free, full-screen ads are spaced several levels apart, and they never interrupt a level you are playing, a retry or a continue. Ads are served by Google AdMob, which may use your advertising identifier and usage data to show more relevant ads and measure their effectiveness.',
         bullets: [
+          'Rewarded videos are optional. During a level the Game may offer you a short video in exchange for unlimited ammo for the rest of that level. A video plays only if you tap to watch it, the reward is given only once it finishes, and you never need one to finish a level.',
           'If you are in the EEA, the UK or another region that requires it, we ask for your consent before personalised ads are shown. If you decline, only non-personalised ads are requested. You can change your choice at any time from "Privacy settings" on the Game\'s home screen.',
           'Android: Settings → Google → Ads → Reset advertising ID / Delete advertising ID.',
         ],
